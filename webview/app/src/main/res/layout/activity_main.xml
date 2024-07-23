@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="home"
+        app:layout_constraintBottom_toTopOf="@+id/aboutGujarat" />
+
+    <Button
+        android:id="@+id/aboutGujarat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Gujarat"
+        app:layout_constraintBottom_toTopOf="@+id/government" />
+
+    <Button
+        android:id="@+id/government"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Government"
+        app:layout_constraintBottom_toTopOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        app:layout_constraintBottom_toTopOf="@+id/btn5" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gmail"
+        app:layout_constraintBottom_toTopOf="@+id/btn6" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        app:layout_constraintBottom_toTopOf="@+id/btn7" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PlayStore"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

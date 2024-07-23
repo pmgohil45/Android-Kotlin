@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.kotlinoptionsmenu.MainActivity">
+    <item
+        android:id="@+id/privacy_policy"
+        android:orderInCategory="100"
+        android:title="@string/privacy_policy" />
+    <item
+        android:id="@+id/developer"
+        android:title="@string/developer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/icon"
+        android:icon="@drawable/action_logo"
+        android:title="@string/icon"
+        app:showAsAction="always" />
+
+</menu>

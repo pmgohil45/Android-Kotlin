@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cppViewPdf">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/geetanjaliCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/geetanjaliTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_card_color"
+            android:fontFamily="@font/alike_angular"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Students of Geetanjali"
+            android:textColor="@color/custom_text_color"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/footerCard"
+        app:layout_constraintTop_toBottomOf="@id/geetanjaliCard" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/footerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_footer_card"
+            android:fontFamily="@font/amita"
+            android:gravity="center"
+            android:text="Manage by : Pm Gohil"
+            android:textColor="@color/custom_footer_text"
+            android:textSize="15dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

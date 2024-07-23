@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="#5aa054">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/farmarLineare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    // 1st imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp">
+
+                        <ImageView
+                            android:id="@+id/farmar2"
+                            android:layout_width="400dp"
+                            android:layout_height="210dp"
+                            android:src="@drawable/farmar2" />
+                    </androidx.cardview.widget.CardView>
+
+                    // 2nd imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp">
+
+                        <ImageView
+                            android:id="@+id/farmar1"
+                            android:layout_width="410dp"
+                            android:layout_height="230dp"
+                            android:src="@drawable/farmar1" />
+                    </androidx.cardview.widget.CardView>
+
+                    // 3rd imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp">
+
+                        <ImageView
+                            android:id="@+id/farmar3"
+                            android:layout_width="410dp"
+                            android:layout_height="230dp"
+                            android:src="@drawable/farmar3" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            // 1st textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/aboutUsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="About Us"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/aboutIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/about"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            // 2nd textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGuidelines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/guidelinesCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/guidelines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="Guidelines"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/guidelinesIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/guidleline"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            // 3rd textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPmkmy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/txtPmkmy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pmkmy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="PM-KMY"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/pmkmyIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/pmkmy"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            // 4th textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCirculars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/circulersCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/circulars"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="Circulars"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/circularsIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/circular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            // 5th textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/contactCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="Contact"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/contactIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/contact"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            // 6th textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/loginCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="Login"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/loginIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/login"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            // 7th textView
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCscLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#000000"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cscLoginCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cscLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2B60DE"
+                        android:gravity="left"
+                        android:padding="35dp"
+                        android:radius="5dp"
+                        android:text="CSC Login"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/cscLoginIco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/csc"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

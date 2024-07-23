@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/black"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tinos"
+                android:text="Photo"
+                android:textColor="@color/appFontColor"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgPhoto"
+                app:layout_constraintTop_toTopOf="@+id/imgPhoto" />
+
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/photo"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewPhoto"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tinos"
+                android:text="Video"
+                android:textColor="@color/appFontColor"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgVideo"
+                app:layout_constraintTop_toTopOf="@+id/imgVideo" />
+
+            <ImageView
+                android:id="@+id/imgVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/video"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewVideo"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tinos"
+                android:text="Audio"
+                android:textColor="@color/appFontColor"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgAudio"
+                app:layout_constraintTop_toTopOf="@+id/imgAudio" />
+
+            <ImageView
+                android:id="@+id/imgAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/audio"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDocx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewAudio"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutDocx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtDocx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tinos"
+                android:text="Documents"
+                android:textColor="@color/appFontColor"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgDocx"
+                app:layout_constraintTop_toTopOf="@+id/imgDocx" />
+
+            <ImageView
+                android:id="@+id/imgDocx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/docx"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txtStorageLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/tinos"
+        android:text="Storage Locations"
+        android:textColor="@color/txtColor"
+        android:textSize="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewDocx"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtStorageLocation"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtPhoneStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tinos"
+            android:text="Phone Storage"
+            android:textColor="@color/appFontColor"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtShowAvailableStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/tinos"
+            android:text="Available Storage"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtPhoneStorage"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imgRightArrowStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/tinos"
+            app:layout_constraintBottom_toBottomOf="@+id/txtShowAvailableStorage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPhoneStorage"
+            app:srcCompat="@drawable/right_arrow"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutDeleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutStorage"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtRecentlyDeleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tinos"
+            android:text="Recently Deleted"
+            android:textColor="@color/appFontColor"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtShowAvailabledeleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/tinos"
+            android:text="Deleted Storage"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            app:layout_constraintTop_toBottomOf="@id/txtRecentlyDeleted"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+
+            android:id="@+id/imgRightArrowDeleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/txtShowAvailabledeleted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtRecentlyDeleted"
+            app:srcCompat="@drawable/right_arrow"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

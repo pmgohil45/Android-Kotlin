@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "465510411356",
+    "project_id": "dbconn-99862",
+    "storage_bucket": "dbconn-99862.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465510411356:android:2d63d524cde87789df0a99",
+        "android_client_info": {
+          "package_name": "com.game.dbconn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465510411356-r5um2g3kubbcv5aun5v13rg6kf7npnrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqlM-yZtfKo1CfWEU800wqD67bS9HXNI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465510411356-r5um2g3kubbcv5aun5v13rg6kf7npnrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_bg_color"
+    tools:context=".MainActivity">
+
+    <!-- This code include a own action bar-->
+    <!--  <include layout="@layout/activity_action_bar"
+          android:id="@+id/actionBar"
+          />
+  -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/farmarLineare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    // 4th imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@color/custom_bg_color">
+
+                        <LinearLayout
+                            android:id="@+id/l4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/custom_bg_color">
+
+                            <ImageView
+                                android:id="@+id/farmar4"
+                                android:layout_width="410dp"
+                                android:layout_height="230dp"
+                                android:src="@drawable/farmar3" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    // 5th imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@color/custom_bg_color">
+
+                        <LinearLayout
+                            android:id="@+id/l5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/custom_bg_color">
+
+                            <ImageView
+                                android:id="@+id/farmar5"
+                                android:layout_width="410dp"
+                                android:layout_height="230dp"
+                                android:src="@drawable/farmar5" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    // 3rd imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@color/custom_bg_color">
+
+                        <LinearLayout
+                            android:id="@+id/l3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/custom_bg_color">
+
+                            <ImageView
+                                android:id="@+id/farmar3"
+                                android:layout_width="410dp"
+                                android:layout_height="230dp"
+                                android:src="@drawable/farmar4" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    // 2nd imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@color/custom_bg_color">
+
+                        <LinearLayout
+                            android:id="@+id/l2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/custom_bg_color">
+
+                            <ImageView
+                                android:id="@+id/farmar1"
+                                android:layout_width="410dp"
+                                android:layout_height="230dp"
+                                android:src="@drawable/farmar2" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    // 6th imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@color/custom_bg_color">
+
+                        <LinearLayout
+                            android:id="@+id/l6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/custom_bg_color">
+
+                            <ImageView
+                                android:id="@+id/farmar6"
+                                android:layout_width="410dp"
+                                android:layout_height="230dp"
+                                android:src="@drawable/farmar6" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    // 1st imageView
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp">
+
+                        <LinearLayout
+                            android:id="@+id/l1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/custom_bg_color">
+
+                            <ImageView
+                                android:id="@+id/farmar2"
+                                android:layout_width="400dp"
+                                android:layout_height="210dp"
+                                android:src="@drawable/farmar1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            // 1st textView
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mainConstraintBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="205dp" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="6dp"
+                    app:layout_constraintEnd_toStartOf="@+id/cardGuidelines"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/aboutUsCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/aboutIco">
+
+                            <TextView
+                                android:id="@+id/aboutUs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="About Us"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/aboutIco"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about"
+                            app:layout_constraintEnd_toEndOf="@+id/subCard1"
+                            app:layout_constraintStart_toStartOf="@id/subCard1"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                // 2nd textView
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardGuidelines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardAbout"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/guidelinesCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="8dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/guidelinesIco">
+
+                            <TextView
+                                android:id="@+id/guidelines"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="Guidelines"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/guidelinesIco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/guidleline"
+                            app:layout_constraintEnd_toEndOf="@+id/subCard2"
+                            app:layout_constraintStart_toStartOf="@+id/subCard2"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                // 3rd textView
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardPmkmy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardAbout"
+                    app:layout_constraintStart_toStartOf="@+id/cardAbout"
+                    app:layout_constraintTop_toBottomOf="@+id/cardAbout">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/txtPmkmy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="14dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pmkmyIco">
+
+                            <TextView
+                                android:id="@+id/pmkmy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="PM-KMY"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/pmkmyIco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pmkmy"
+                            app:layout_constraintEnd_toEndOf="@+id/subCard3"
+                            app:layout_constraintStart_toStartOf="@+id/subCard3" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                // 4th textView
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCirculars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardGuidelines"
+                    app:layout_constraintStart_toStartOf="@+id/cardGuidelines"
+                    app:layout_constraintTop_toBottomOf="@+id/cardGuidelines">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/circulersCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="17dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circularsIco">
+
+                            <TextView
+                                android:id="@+id/circulars"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="Circulars"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/circularsIco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/circular"
+                            app:layout_constraintEnd_toEndOf="@+id/subCard4"
+                            app:layout_constraintStart_toStartOf="@+id/subCard4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                // 5th textView
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="6dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardPmkmy"
+                    app:layout_constraintStart_toStartOf="@+id/cardPmkmy"
+                    app:layout_constraintTop_toBottomOf="@+id/cardPmkmy">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/contactCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/contactIco">
+
+                            <TextView
+                                android:id="@+id/contact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="Contact"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/contactIco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/contact"
+                            app:layout_constraintBottom_toTopOf="@+id/subCard5"
+                            app:layout_constraintEnd_toEndOf="@+id/subCard5"
+                            app:layout_constraintStart_toStartOf="@+id/subCard5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                // 6th textView
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCscLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardCirculars"
+                    app:layout_constraintStart_toStartOf="@+id/cardCirculars"
+                    app:layout_constraintTop_toBottomOf="@+id/cardCirculars">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cscLoginCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="6dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="30dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cscLoginIco">
+
+                            <TextView
+                                android:id="@+id/cscLogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="CSC Login"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/cscLoginIco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/csc"
+                            app:layout_constraintBottom_toTopOf="@+id/subCard6"
+                            app:layout_constraintEnd_toEndOf="@+id/subCard6"
+                            app:layout_constraintStart_toStartOf="@+id/subCard6" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                // 7th textView
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardCscLogin"
+                    app:layout_constraintStart_toStartOf="@+id/cardContact"
+                    app:layout_constraintTop_toBottomOf="@+id/cardCscLogin">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/loginCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_button_color"
+                        android:paddingStart="30dp"
+                        android:paddingTop="30dp"
+                        android:paddingEnd="30dp"
+                        android:paddingBottom="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/subCard7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="200dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/custom_sub_main_button_color"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:radius="5dp"
+                                android:text="Login"
+                                android:textColor="@color/textBtn"
+                                android:textSize="25dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <ImageView
+                            android:id="@+id/loginIco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/login"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/ads1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardLogin">
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-8269045129205865/9621054821" />
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

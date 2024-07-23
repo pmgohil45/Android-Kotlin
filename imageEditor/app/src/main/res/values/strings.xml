@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">imageEditor</string>
+    <string name="choose_line">What would you like to create?</string>
+</resources>

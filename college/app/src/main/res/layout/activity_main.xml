@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_bg_color"
+    tools:context=".MainActivity">
+
+<!--
+    <ImageView
+        android:id="@+id/networkImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="50dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_baseline_network_check_24" />
+-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/geetanjaliCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_card_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/geetanjaliTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_card_color"
+            android:fontFamily="@font/alike_angular"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Students of Geetanjali"
+            android:textColor="@color/custom_text_color"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/footerCard"
+        app:layout_constraintTop_toBottomOf="@+id/geetanjaliCard">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mainConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/subCard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/subConst1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_card_color">
+
+                        <ImageView
+                            android:id="@+id/subImg1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="50dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/sub1" />
+
+                        <Button
+                            android:id="@+id/subBtn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/custom_outer_btn_color"
+                            android:paddingStart="95dp"
+                            android:paddingEnd="95dp"
+                            android:paddingBottom="10dp"
+                            android:text="C#"
+                            android:textColor="@color/custom_text_color"
+                            app:layout_constraintEnd_toEndOf="@+id/subImg1"
+                            app:layout_constraintStart_toStartOf="@+id/subImg1"
+                            app:layout_constraintTop_toBottomOf="@+id/subImg1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/subCard2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/subCard1"
+                    app:layout_constraintStart_toStartOf="@+id/subCard1"
+                    app:layout_constraintTop_toBottomOf="@+id/subCard1"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/subConst2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_card_color">
+
+                        <ImageView
+                            android:id="@+id/subImg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="50dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/sub1" />
+
+                        <Button
+                            android:id="@+id/subBtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/custom_outer_btn_color"
+                            android:paddingStart="87dp"
+                            android:paddingEnd="87dp"
+                            android:paddingBottom="10dp"
+                            android:text="JAVA"
+                            android:textColor="@color/custom_text_color"
+                            app:layout_constraintEnd_toEndOf="@+id/subImg2"
+                            app:layout_constraintHorizontal_bias="0.526"
+                            app:layout_constraintStart_toStartOf="@+id/subImg2"
+                            app:layout_constraintTop_toBottomOf="@+id/subImg2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/subCard3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/subCard2"
+                    app:layout_constraintStart_toStartOf="@+id/subCard2"
+                    app:layout_constraintTop_toBottomOf="@+id/subCard2"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/subConst3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_card_color">
+
+                        <ImageView
+                            android:id="@+id/subImg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="50dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/sub1" />
+
+                        <Button
+                            android:id="@+id/subBtn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/custom_outer_btn_color"
+                            android:paddingStart="95dp"
+                            android:paddingEnd="95dp"
+                            android:paddingBottom="10dp"
+                            android:text="OS"
+                            android:textColor="@color/custom_text_color"
+                            app:layout_constraintEnd_toEndOf="@+id/subImg3"
+                            app:layout_constraintStart_toStartOf="@+id/subImg3"
+                            app:layout_constraintTop_toBottomOf="@+id/subImg3" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/subCard4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/subCard3"
+                    app:layout_constraintStart_toStartOf="@+id/subCard3"
+                    app:layout_constraintTop_toBottomOf="@+id/subCard3"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/subConst4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_card_color">
+
+                        <ImageView
+                            android:id="@+id/subImg4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="50dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/sub1" />
+
+                        <Button
+                            android:id="@+id/subBtn4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/custom_outer_btn_color"
+                            android:paddingStart="90dp"
+                            android:paddingEnd="90dp"
+                            android:paddingBottom="10dp"
+                            android:text="N/W"
+                            android:textColor="@color/custom_text_color"
+                            app:layout_constraintEnd_toEndOf="@+id/subImg4"
+                            app:layout_constraintStart_toStartOf="@+id/subImg4"
+                            app:layout_constraintTop_toBottomOf="@+id/subImg4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/footerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_footer_card"
+            android:fontFamily="@font/amita"
+            android:gravity="center"
+            android:text="Manage by : Pm Gohil"
+            android:textColor="@color/custom_footer_text"
+            android:textSize="15dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

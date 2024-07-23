@@ -1,0 +1,50 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/font/.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/font/alike_angular.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/font/amethysta.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/font/amiri.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/font/amiri_bold.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/font/amita.xml" value="0.13055555555555556" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_bca_part.xml" value="0.21920289855072464" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_bca_syllabus_view.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_blank_showing.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_bscit_syllabus_view.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_cpp.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_cpp_view_pdf.xml" value="0.20878623188405798" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_footer_manage.xml" value="0.20878623188405798" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_main.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_network.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_oracle.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_oracle_view_pdf.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_privacy_policy.xml" value="0.25" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub1.xml" value="0.16757246376811594" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub1_material_veiw_pdf.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub1_ques.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub2.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub2_material_veiw_pdf.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub3.xml" value="0.16757246376811594" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub3_material_veiw_pdf.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub4.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_sub4_material_veiw_pdf.xml" value="0.1983695652173913" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_syllabus.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_time_table_veiw.xml" value="0.264" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_time_table_view.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_welcome.xml" value="0.21920289855072464" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_wordpress.xml" value="0.152" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/layout/activity_wordpress_view_pdf.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/collegeClub/app/src/main/res/menu/main_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_card_color"
+    tools:context=".welcome">
+
+    <ImageView
+        android:id="@+id/appIconImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_icon"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_angular"
+        android:text="College Club"
+        android:textColor="@color/custom_bg_color"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/manageText"
+        app:layout_constraintEnd_toEndOf="@id/appIconImage"
+        app:layout_constraintStart_toStartOf="@id/appIconImage"
+        app:layout_constraintTop_toBottomOf="@id/appIconImage"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/manageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_angular"
+        android:text="Manage by Pm Gohil"
+        android:textColor="@color/custom_bg_color"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/appIconImage"
+        app:layout_constraintStart_toStartOf="@+id/appIconImage"
+        app:layout_constraintTop_toBottomOf="@id/appNameText"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

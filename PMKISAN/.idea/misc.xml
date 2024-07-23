@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_bg_color.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_button_color.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_card_corner.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_inner_bg_color.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_inner_button_color.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_sub_main_button_color.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_welcom_color.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/custom_welcom_text_color.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_about_us.xml" value="0.2" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_action_bar.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_circulars.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_contact.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_csc_login.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_eng.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_exclusion.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_faq.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_guidelines.xml" value="0.176" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_guidlines_menu1.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_guidlines_menu2.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_hindi.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_insta.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_instagram.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_instagram2.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_login.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_pm.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_pmkmy.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_privacy_policy.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_scheme.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/activity_welcome.xml" value="0.2" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/fragment_first.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/fragment_first2.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/fragment_second.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/layout/fragment_second2.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/menu/action_logo.xml" value="0.25" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/menu/icon.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/menu/icons.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/menu/menu1.xml" value="0.25" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/menu/menus.xml" value="0.25" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/menu/menus1.xml" value="0.25" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/91951/AndroidStudioProjects/PMKISAN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22962962962962963" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
