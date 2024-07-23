@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "845817757167",
+    "project_id": "resume-center",
+    "storage_bucket": "resume-center.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845817757167:android:3fb63288acb48d9df04a1a",
+        "android_client_info": {
+          "package_name": "com.pmgohil.resumecenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845817757167-uuu4uk37srgcul8pt7c5aodafb72oi5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg8_rlPoylv9zHCtidOf3bN8JSM5whhYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845817757167-uuu4uk37srgcul8pt7c5aodafb72oi5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="custome_calender_theme">
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/light_cyan</item>
+        <!-- Divider color -->
+        <item name="colorControlNormal">@color/purple</item>
+    </style>
+
+    <style name="circular">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedSquare">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="CornerCut">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSize">15dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="DiamondCut">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSize">75dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="SpecificCornerCut">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSizeTopRight">75dp</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerSizeBottomLeft">75dp</item>
+        <item name="cornerFamilyBottomLeft">cut</item>
+    </style>
+
+    <style name="SpecificCornerRounded">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">40dp</item>
+        <item name="cornerSizeBottomLeft">40dp</item>
+        <item name="cornerSizeBottomRight">40dp</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="colorAccent">@color/black</item>
+        <!--selected Item color-->
+        <item name="colorControlActivated">@color/pink</item>
+        <!-- Highlight item color-->
+        <item name="colorControlHighlight">@color/pink</item>
+        <!--Calender Background color -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Ok Cancel Color-->
+        <item name="android:textColor">@color/black</item>
+        <!-- Week TextColor-->
+        <item name="android:textColorSecondary">@color/pink</item>
+        <!-- Calender Number color arrow color (< >) -->
+        <item name="android:textColorPrimary">@color/dark_cyan</item>
+        <!--day , month-->
+        <!--<item name="android:textColorPrimaryInverse">@color/black</item>-->
+        <!-- year-->
+        <item name="android:textColorSecondaryInverse">@color/dark_cyan</item>
+        <item name="android:headerBackground">@color/black</item>
+
+
+    </style>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array">
+        <item>@string/click_here_to_select_category</item>
+        <item name="days_special">@string/days_special</item>
+        <item name="motivational">@string/motivational</item>
+        <item name="attitude">@string/attitude</item>
+        <item name="birthday">@string/birthday</item>
+        <item name="love">@string/love</item>
+        <item name="happy">@string/happy</item>
+        <item name="sad">@string/sad</item>
+        <item name="coders">@string/coders</item>
+        <item name="buddha">@string/buddha</item>
+        <item name="chanakya">@string/chanakya</item>
+        <item name="samrat_ashoka">@string/samrat_ashoka</item>
+        <item name="maharana_pratap">@string/maharana_pratap</item>
+        <item name="chhatrapati_shivaji_maharaj">@string/chhatrapati_shivaji_maharaj</item>
+        <item name="chhatrapati_sambhaji_maharaj">@string/chhatrapati_sambhaji_maharaj</item>
+        <item name="swami_vivekananda">@string/swami_vivekananda</item>
+        <item name="guru_gobind_singh">@string/guru_gobind_singh</item>
+        <item name="b_r_ambedkar">@string/b_r_ambedkar</item>
+        <item name="subhas_chandra_bose">@string/subhas_chandra_bose</item>
+        <item name="sardar_vallabhbhai_patel">@string/sardar_vallabhbhai_patel</item>
+    </string-array>
+</resources>

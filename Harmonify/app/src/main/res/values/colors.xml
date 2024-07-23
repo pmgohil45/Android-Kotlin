@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#FF000000</color>
+
+    <color name="background_color">#121212</color>
+    <color name="top_bar_background">#1E1E1E</color>
+    <color name="control_background_color">#222121</color>
+    <color name="nav_drawer_background">#232323</color>
+    <color name="hint_text_color">#757575</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lighter_gray">#ddd</color>
+    <color name="highlighted_music_color">#09B6BF</color>
+    <color name="semi_transperent_color">#80000000</color>
+    <color name="transperent_color">#00000000</color>
+</resources>

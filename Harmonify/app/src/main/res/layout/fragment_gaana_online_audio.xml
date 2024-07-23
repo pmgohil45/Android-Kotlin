@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".OnlineAudioFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transperent_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:padding="20dp"
+            android:text="Click to Login with Spotify"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/ll_online_songs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:ignore="UselessParent">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:hint="Search for music..."
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:textColor="@color/background_color"
+            android:textColorHint="@color/hint_text_color"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+
+        <!-- Recommended Section -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_recommended_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Recommended for You"
+                android:textColor="@color/hint_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,MissingConstraints" />
+            <!-- Add the ToggleButton here -->
+            <ToggleButton
+                android:id="@+id/shuffleToggleButtonOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/semi_transperent_color"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textOff="Shuffle Off"
+                android:textOn="Shuffle On"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/txt_recommended_online"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_recommended_online"
+                tools:ignore="HardcodedText,MissingConstraints" />
+
+            <!--            <TextView
+                            android:id="@+id/txt_shuffle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="8dp"
+                            android:text="Shuffle Off"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/txt_recommended"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/txt_recommended"
+                            tools:ignore="HardcodedText,MissingConstraints" />
+                        <TextView
+                            android:id="@+id/txt_shuffle_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="8dp"
+                            android:text="Shuffle On"
+                            android:visibility="gone"
+                            android:textColor="@color/text_color"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/txt_recommended"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/txt_recommended"
+                            tools:ignore="HardcodedText,MissingConstraints" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- List of Recommendations -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommendations_list_online"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:scrollbars="vertical" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <!-- Playback Controls -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/playbackControlsOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/highlighted_music_color"
+            app:cardCornerRadius="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                app:cardBackgroundColor="@color/control_background_color"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="6dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transperent_color"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlSymmetry">
+
+                        <ImageView
+                            android:id="@+id/albumArtworkOnline"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/album_artwork_description"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_launcher_round" />
+
+                        <TextView
+                            android:id="@+id/songTitleOnline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/now_playing"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            tools:ignore="RtlHardcoded" />
+
+                        <ImageButton
+                            android:id="@+id/previousButtonOnline"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/previous_button_description"
+                            android:src="@drawable/ic_previous" />
+
+                        <ImageButton
+                            android:id="@+id/playPauseButtonOnline"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/play_pause_button_description"
+                            android:src="@drawable/ic_play" />
+
+                        <ImageButton
+                            android:id="@+id/nextButtonOnline"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/next_button_description"
+                            android:src="@drawable/ic_next" />
+                    </LinearLayout>
+
+                    <!-- Track Progress Line -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp">
+
+                        <SeekBar
+                            android:id="@+id/seekBarOnline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressTint="@color/lighter_gray"
+                            android:thumbTint="@color/white"
+                            app:layout_constraintEnd_toStartOf="@id/countdownTimerTextViewOnline"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/countdownTimerTextViewOnline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Timer"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="HardcodedText,MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/totalTimerTextViewOnline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Timer"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/countdownTimerTextViewOnline"
+                            tools:ignore="HardcodedText,MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

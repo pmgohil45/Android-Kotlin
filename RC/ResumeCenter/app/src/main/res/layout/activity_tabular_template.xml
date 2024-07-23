@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id="@+id/lineTop"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/custome_color"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ScrollView
+                android:id="@+id/basicTempScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/mainLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/imageCardView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:backgroundTint="@color/black">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/showImageView"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/boy_white_1"
+                                app:shapeAppearanceOverlay="@style/circular" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t2TxtName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Your Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="22dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtDesignation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Designation"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/black"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/t2TxtAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Address"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/t2TxtNumber"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Number"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtEmail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Email"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t2llPersonalDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="Personal Information"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Gender : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtGender"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Birth Date : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtBirthDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Birth Place : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtBirthPlace"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Cast : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtCast"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Marital Status : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtMS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lineViewVerticalPersonal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Language : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtLanguage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Village : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtVillage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="District : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtDistrict"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="State : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtState"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text="Nationality : "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtNationality"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t2llExpDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="Experience Detail"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/t2LLExpFresher"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/t2TxtFresher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/alike_angular"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/t2LLExp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="2dp"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:gravity="center"
+                                    android:text="1)"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lineViewVerticalExp1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t2TxtPosition1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtPosition1"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtCompanyName1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtCompanyName1"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtLocation1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtLocation1"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lineViewHorizontalExp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:id="@+id/lineBottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/black"
+                                tools:ignore="MissingConstraints" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/t2LLExp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:gravity="center"
+                                    android:text="2)"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lineViewVerticalExp2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:id="@+id/lineBottom"
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t2TxtPosition2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtPosition2"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtCompanyName2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtCompanyName2"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtLocation2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtLocation2"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lineViewHorizontalExp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:id="@+id/lineBottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/black"
+                                tools:ignore="MissingConstraints" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/t2LLExp3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:gravity="center"
+                                    android:text="3)"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lineViewVerticalExp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t2TxtPosition3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtPosition3"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtCompanyName3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtCompanyName3"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/t2TxtLocation3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="t2TxtLocation3"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lineViewHorizontalExp3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:id="@+id/lineBottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/black"
+                                tools:ignore="MissingConstraints" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t2llEducationDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="Education Detail"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <TableLayout
+                                android:id="@+id/tableEducation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/black">
+
+                                <TableRow
+                                    android:id="@+id/row1"
+                                    android:background="@color/black"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/black"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:text="Passing Year"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/black"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:text="School / University"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/black"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:text="Degree"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/black"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:text="Percentage(%)"
+                                        android:textColor="@color/white"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/row2"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/t2TxtYear10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtYear10"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtSchoolUniversity10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtSchoolUniversity10"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtDegree10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtDegree10"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtPercentage10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtPercentage10"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/row3"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/t2TxtYear12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtYear12"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtSchoolUniversity12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtSchoolUniversity12"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtDegree12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtDegree12"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtPercentage12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtPercentage12"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/row4"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/t2TxtYearUG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtYearUG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtSchoolUniversityUG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtSchoolUniversityUG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtDegreeUG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtDegreeUG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtPercentageUG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtPercentageUG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/row5"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/t2TxtYearPG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtYearPG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtSchoolUniversityPG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtSchoolUniversityPG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtDegreePG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="left"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtDegreePG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/t2TxtPercentagePG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:fontFamily="@font/alike_angular"
+                                        android:gravity="center"
+                                        android:paddingTop="1dp"
+                                        android:paddingRight="1dp"
+                                        android:text="t2TxtPercentagePG"
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp" />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/t2llSkillDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="Skill Detail"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/t2LLSkill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="6">
+
+                            <LinearLayout
+                                android:id="@+id/lineVerticalSkill1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t2TxtSkill1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/alike_angular"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:id="@+id/lineVerticalSkill2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t2TxtSkill2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/alike_angular"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:id="@+id/lineVerticalSkill3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/t2TxtSkill3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/alike_angular"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:id="@+id/lineVerticalSkill4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/black"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/backArrowTemplateRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lineTop"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/backArrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/back_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/templateRL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lineBottom"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/downloadImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/download" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineBottom"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custome_color"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

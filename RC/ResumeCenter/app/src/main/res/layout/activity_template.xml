@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".TemplateActivity">
+
+    <TextView
+        android:id="@+id/tvPageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alex_brush"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Resume Themes"
+        android:textColor="@color/pink"
+        android:textSize="35dp"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+    <View
+        android:id="@+id/lineTop"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/custome_color"
+        app:layout_constraintTop_toBottomOf="@+id/tvPageName"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineBottom"
+        app:layout_constraintTop_toBottomOf="@+id/lineTop"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/ll_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:weightSum="1"
+            tools:ignore="ScrollViewSize">
+
+            <RelativeLayout
+                android:id="@+id/templateRL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custome_border"
+                android:padding="2dp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/templateCardView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/templateImage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/basic_theme_img"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/txtTemplateName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:gravity="center"
+                            android:text="Basic Theme"
+                            android:textColor="@color/pink"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/templateRL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custome_border"
+                android:padding="2dp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/templateCardView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/templateImage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/tabular_theme_img" />
+
+                        <TextView
+                            android:id="@+id/txtTemplateName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:gravity="center"
+                            android:text="Tabular Theme"
+                            android:textColor="@color/pink"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/templateRL3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custome_border"
+                android:padding="2dp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/templateCardView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/templateImage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/rc_theme_img" />
+
+                        <TextView
+                            android:id="@+id/txtTemplateName3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:gravity="center"
+                            android:text="RC Theme"
+                            android:textColor="@color/pink"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <!--                        <RelativeLayout
+                                        android:id="@+id/templateRL4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage4"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/templateRL5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage5"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/templateRL6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage6"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName6"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/templateRL7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView7"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage7"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName7"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/templateRL8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView8"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage8"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName8"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/templateRL9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView9"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage9"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName9"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/templateRL10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/custome_border"
+                                        android:padding="2dp"
+                                        tools:ignore="MissingConstraints">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/templateCardView10"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/black"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/black"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:id="@+id/templateImage10"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="100dp"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:src="@drawable/boy2" />
+
+                                                <TextView
+                                                    android:id="@+id/txtTemplateName10"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:fontFamily="@font/alike_angular"
+                                                    android:gravity="center"
+                                                    android:text="Resume Themes"
+                                                    android:textColor="@color/pink"
+                                                    android:textSize="20dp" />
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+                        -->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/lineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custome_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

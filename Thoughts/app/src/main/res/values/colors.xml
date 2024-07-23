@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_lavender">#9C27B0</color>
+    <color name="classic_rose">#fbc2eb</color>
+    <color name="lavender_indigo">#8b63da</color>
+    <color name="cornflower_blue">#78a3eb</color>
+    <color name="medium_blue">#3c21b7</color>
+    <!--<color name="opal">#9FCACC</color>
+    <color name="light_sky_blue">#B3E3E6</color>-->
+    <color name="light_sky_blue">#5ca5c7</color>
+    <color name="opal">#3292bb</color>
+    <color name="boston_blue">#5ca5c7</color>
+    <color name="green">#80c43b</color>
+    <color name="orange">#f89b3a</color>
+
+    <color name="medium_pink">#ffa3b3</color>
+    <color name="platinum">#DFE5E6</color>
+    <color name="dark_cyan">#0AAEC6</color>
+    <color name="light_cyan">#03DAC5</color>
+    <color name="purple">#c471ed</color>
+    <color name="gray">#4C4C4C</color>
+    <color name="light_gray">#C9C3C3</color>
+    <color name="salmon">#D5F48D81</color>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#66000000</color>
+
+</resources>

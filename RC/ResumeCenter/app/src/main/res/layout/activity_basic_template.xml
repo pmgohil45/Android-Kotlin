@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id="@+id/lineTop"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/custome_color"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ScrollView
+                android:id="@+id/basicTempScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:ems="8"
+                            android:fontFamily="@font/alike_angular"
+                            android:paddingTop="10dp"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textSize="25dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <ImageView
+                            android:id="@+id/showImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_toRightOf="@+id/txtName" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlPersonalDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alike_angular">
+
+                            <TextView
+                                android:id="@+id/txtAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Address"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_toRightOf="@+id/txtAddress"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Phone"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txtPhone"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/txtAddress"
+                                android:ems="10"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Email"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,SpUsage" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:text="Education"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <LinearLayout
+                        android:id="@+id/llEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSchool10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/txtPassingYear10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:gravity="right"
+                                android:text="Passing Year"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/txtPassingYear10"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtSchoolName10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="School Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtSchoolDegree10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Degree"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtPercentage10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Percentage"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSchool12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/txtPassingYear12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:gravity="right"
+                                android:text="Passing Year"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/txtPassingYear12"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtSchoolName12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="School Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtSchoolDegree12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Degree"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtPercentage12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Percentage"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlUG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/txtPassingYearUG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:gravity="right"
+                                android:text="Passing Year"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/txtPassingYearUG"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtUniversityNameUG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="University Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtUniversityDegreeUG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Degree"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtPercentageUG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Percentage"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlPG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/txtPassingYearPG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:gravity="right"
+                                android:text="Passing Year"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/txtPassingYearPG"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtUniversityNamePG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="University Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtUniversityDegreePG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Degree"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/txtPercentagePG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:fontFamily="@font/alike_angular"
+                                    android:text="Percentage"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtSkill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:text="Skill"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSkill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="6">
+
+                            <TextView
+                                android:id="@+id/txtSkill1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Skill 1"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtSkill2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Skill 1"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtSkill3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="5"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Skill 1"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtExp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:text="Experience"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlExp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txtFresher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="I'm a fresher."
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtExpNum1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="1)"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <LinearLayout
+                            android:id="@+id/llTxtExp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txtExpNum1"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:weightSum="6">
+
+                            <TextView
+                                android:id="@+id/txtCompanyName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Company Name"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtPosition1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Position"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtLocation1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Location"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtExpNum2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/llTxtExp1"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="2)"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <LinearLayout
+                            android:id="@+id/llTxtExp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txtExpNum2"
+                            android:ems="10"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:weightSum="6">
+
+                            <TextView
+                                android:id="@+id/txtCompanyName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Company Name"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtPosition2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Position"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtLocation2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Location"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtReference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:text="Reference"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlReference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtReferenceNum1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="1)"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <LinearLayout
+                            android:id="@+id/llTxtReference1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txtReferenceNum1"
+                            android:orientation="vertical"
+                            android:weightSum="6">
+
+                            <TextView
+                                android:id="@+id/txtReferenceName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Name"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtReferenceCompanyName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Company Name"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtReferencePosition1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Position"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtReferencePhone1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Phone"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtReferenceNum2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/llTxtReference1"
+                            android:fontFamily="@font/alike_angular"
+                            android:text="1)"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <LinearLayout
+                            android:id="@+id/llTxtReference2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/txtReferenceNum2"
+                            android:ems="10"
+                            android:orientation="vertical"
+                            android:weightSum="6">
+
+                            <TextView
+                                android:id="@+id/txtReferenceName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Name"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtReferenceCompanyName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Company Name"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtReferencePosition2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Position"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/txtReferencePhone2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:ems="8"
+                                android:fontFamily="@font/alike_angular"
+                                android:text="Phone"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/backArrowTemplateRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lineTop"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/backArrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/back_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/templateRL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lineBottom"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/downloadImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/download" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineBottom"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custome_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
