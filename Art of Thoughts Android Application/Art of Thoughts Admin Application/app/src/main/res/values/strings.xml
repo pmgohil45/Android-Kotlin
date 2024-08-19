@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Art of Thoughts (Admin)</string>
+    <string name="default_web_client_id">499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com</string>
+
+    <string name="click_here_to_select_category">Click here to Select Category</string>
+    <string name="days_special">Days Special</string>
+    <string name="motivational">Motivational</string>
+    <string name="attitude">Attitude</string>
+    <string name="birthday">Birthday</string>
+    <string name="love">Love</string>
+    <string name="happy">Happy</string>
+    <string name="sad">Sad</string>
+    <string name="coders">Coders</string>
+    <string name="buddha">Buddha</string>
+    <string name="chanakya">Chanakya</string>
+    <string name="samrat_ashoka">Samrat Ashoka</string>
+    <string name="maharana_pratap">Maharana Pratap</string>
+    <string name="chhatrapati_shivaji_maharaj">Chhatrapati Shivaji Maharaj</string>
+    <string name="chhatrapati_sambhaji_maharaj">Chhatrapati Sambhaji Maharaj</string>
+    <string name="swami_vivekananda">Swami Vivekananda</string>
+    <string name="guru_gobind_singh">Guru Gobind Singh</string>
+    <string name="b_r_ambedkar">B R Ambedkar</string>
+    <string name="subhas_chandra_bose">Subhas Chandra Bose</string>
+    <string name="sardar_vallabhbhai_patel">Sardar Vallabhbhai Patel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

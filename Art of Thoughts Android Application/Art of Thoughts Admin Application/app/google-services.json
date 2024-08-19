@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "499814565924",
+    "firebase_url": "https://thoughts-cfdbb-default-rtdb.firebaseio.com",
+    "project_id": "thoughts-cfdbb",
+    "storage_bucket": "thoughts-cfdbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499814565924:android:1695878d0b0673b12ab0b1",
+        "android_client_info": {
+          "package_name": "com.pmgohil.image_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcnJhTTDOK74K99grckimh9n1dlgIebO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499814565924:android:94042ade36a7947e2ab0b1",
+        "android_client_info": {
+          "package_name": "com.pmgohil.thoughts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499814565924-hb8rssaa1fnb1u8rohjr768hm9894it1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pmgohil.thoughts",
+            "certificate_hash": "7275b08a255c493dffb08a349ad64f5802d9388b"
+          }
+        },
+        {
+          "client_id": "499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcnJhTTDOK74K99grckimh9n1dlgIebO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499814565924:android:014ae76e87a9c0492ab0b1",
+        "android_client_info": {
+          "package_name": "com.pmgohil.thoughtsadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcnJhTTDOK74K99grckimh9n1dlgIebO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499814565924-3nkrrir6du1iv9r3sc2o66gkfq5han86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
